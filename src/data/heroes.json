@@ -1,0 +1,54 @@
+[
+  {
+    "id": "shane",
+    "name": "Shane",
+    "group": "Holy Cross Crusaders",
+    "grade": "Legendary",
+    "type": "Attack",
+    "titles": {
+      "4": "Test Subject",
+      "5": "Demon-Slaying Agent",
+      "6": "Sealer of Demons"
+    },
+    "transcendence": {
+      "1": { "atk_p": 12 },
+      "2": { "atk_p": 6, "unlock": "passive_t2" },
+      "3": { "hp_p": 18 },
+      "4": { "crit_rate": 18 },
+      "5": { "atk_p": 12 },
+      "6": { "atk_p": 6, "unlock": "skill2_t6" },
+      "7": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "8": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "9": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "10": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "11": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "12": { "atk_p": 2, "def_p": 2, "hp_p": 2 }
+    }
+  },
+  {
+    "id": "rosie",
+    "name": "Rosie",
+    "group": "Seven Knights of Old",
+    "grade": "Legendary",
+    "type": "Support",
+    "titles": {
+      "4": "Shadow Knight",
+      "5": "Knight Maiden of Protection",
+      "6": "Sealer of Demons"
+    },
+    "transcendence": {
+      "1": { "def_p": 12 },
+      "2": { "def_p": 6, "unlock": "passive_t2" },
+      "3": { "hp_p": 18 },
+      "4": { "dmg_red": 10 },
+      "5": { "def_p": 12 },
+      "6": { "def_p": 6, "unlock": "skill2_t6" },
+      "7": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "8": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "9": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "10": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "11": { "atk_p": 2, "def_p": 2, "hp_p": 2 },
+      "12": { "atk_p": 2, "def_p": 2, "hp_p": 2 }
+    }
+  }
+]

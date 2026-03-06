@@ -1,0 +1,8 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment/Build folders (we will use these later)
+node_modules/
+dist/
+.env

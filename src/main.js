@@ -1,13 +1,25 @@
+// 1. Load the data when the page opens
+fetch('../data/characters.json')
+    .then(response => response.json())
+    .then(data => {
+        const select = document.getElementById('hero-select');
+        
+        // Add options to the dropdown
+        data.forEach(hero => {
+            let option = document.createElement('option');
+            option.value = JSON.stringify(hero); // Store the object as a string
+            option.text = hero.name;
+            select.appendChild(option);
+        });
+    });
+
+// 2. Calculation logic
 document.getElementById('calc-btn').addEventListener('click', () => {
-    // 1. Get values from the inputs
-    const atk = parseFloat(document.getElementById('atk').value);
+    const heroData = JSON.parse(document.getElementById('hero-select').value);
     const buff = parseFloat(document.getElementById('buff').value);
-    const def = parseFloat(document.getElementById('def').value);
 
-    // 2. Perform the logic (Simplified formula)
-    // Formula: (Attack * (1 + Buff/100)) - Defense
-    const totalDamage = (atk * (1 + (buff / 100))) - def;
+    // Formula: (BaseAtk * (1 + Buff/100)) - BaseDef
+    const totalDamage = (heroData.baseAtk * (1 + (buff / 100))) - heroData.baseDef;
 
-    // 3. Update the UI
-    document.getElementById('result').innerText = `Result: ${totalDamage.toFixed(2)}`;
+    document.getElementById('result').innerText = `Result for ${heroData.name}: ${totalDamage.toFixed(2)}`;
 });

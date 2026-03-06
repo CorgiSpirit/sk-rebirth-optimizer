@@ -9,9 +9,13 @@
     <h1>Damage Calculator</h1>
     
     <div class="calculator">
-        <label>Attack: <input type="number" id="atk" value="1000"></label><br>
+        <label>Select Hero: 
+            <select id="hero-select">
+                <option value="">-- Choose a Hero --</option>
+            </select>
+        </label><br>
+    
         <label>Buff (%): <input type="number" id="buff" value="0"></label><br>
-        <label>Enemy Defense: <input type="number" id="def" value="100"></label><br>
         <button id="calc-btn">Calculate</button>
     </div>
 

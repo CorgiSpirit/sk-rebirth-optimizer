@@ -3,12 +3,14 @@
         "id": "hero1",
         "name": "Knight A",
         "baseAtk": 1000,
-        "baseDef": 200
+        "baseDef": 200,
+        "weaponAtk": 500
     },
     {
         "id": "hero2",
         "name": "Knight B",
         "baseAtk": 1200,
-        "baseDef": 150
+        "baseDef": 150,
+        "weaponAtk": 300
     }
 ]
